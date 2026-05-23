@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tornei &amp; Classifiche — Padeland Milano</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-text">PADELAND</span>
+        <span class="logo-sub">MILANO</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="tornei.html" class="nav-link active highlight">Tornei &amp; Classifiche</a></li>
+        <li><a href="lezioni.html" class="nav-link">Lezioni</a></li>
+        <li><a href="persone.html" class="nav-link">Persone</a></li>
+        <li><a href="contatti.html" class="nav-link">Contatti</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <h1>🏆 Macron Cup 2026</h1>
+    <p>Campionato Padeland · Partner Macron · 10 tappe · Gennaio–Giugno 2026</p>
+  </div>
+
+  <main>
+    <section>
+      <div class="container">
+
+        <!-- Tappe -->
+        <h2 class="section-title">Calendario Tappe</h2>
+        <div class="tappe-grid">
+          <div class="tappa-card">
+            <div class="tappa-num">Tappa 1</div>
+            <div class="tappa-date">31 Gen</div>
+            <div class="tappa-status tappa-done">✓ Completata</div>
+          </div>
+          <div class="tappa-card">
+            <div class="tappa-num">Tappa 2</div>
+            <div class="tappa-date">21 Feb</div>
+            <div class="tappa-status tappa-done">✓ Completata</div>
+          </div>
+          <div class="tappa-card">
+            <div class="tappa-num">Tappa 3</div>
+            <div class="tappa-date">14 Mar</div>
+            <div class="tappa-status tappa-done">✓ Completata</div>
+          </div>
+          <div class="tappa-card">
+            <div class="tappa-num">Tappa 4</div>
+            <div class="tappa-date">28 Mar</div>
+            <div class="tappa-status tappa-done">✓ Completata</div>
+          </div>
+          <div class="tappa-card">
+            <div class="tappa-num">Tappa 5</div>
+            <div class="tappa-date">11 Apr</div>
+            <div class="tappa-status tappa-done">✓ Completata</div>
+          </div>
+          <div class="tappa-card" style="border-top-color: var(--yellow);">
+            <div class="tappa-num">Tappa 6</div>
+            <div class="tappa-date">— Mag</div>
+            <div class="tappa-status"><span class="tappa-next">Prossima</span></div>
+          </div>
+          <div class="tappa-card" style="border-top-color: #ccc;">
+            <div class="tappa-num">Tappa 7</div>
+            <div class="tappa-date">— Mag</div>
+            <div class="tappa-status tappa-future">In programma</div>
+          </div>
+          <div class="tappa-card" style="border-top-color: #ccc;">
+            <div class="tappa-num">Tappa 8</div>
+            <div class="tappa-date">— Giu</div>
+            <div class="tappa-status tappa-future">In programma</div>
+          </div>
+          <div class="tappa-card" style="border-top-color: #ccc;">
+            <div class="tappa-num">Tappa 9</div>
+            <div class="tappa-date">— Giu</div>
+            <div class="tappa-status tappa-future">In programma</div>
+          </div>
+          <div class="tappa-card" style="border-top-color: #ccc;">
+            <div class="tappa-num">Tappa 10</div>
+            <div class="tappa-date">— Giu</div>
+            <div class="tappa-status tappa-future">Finale</div>
+          </div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="tabs" role="tablist">
+          <button class="tab-btn active" onclick="switchTab('maschile', this)" id="tab-maschile" role="tab">⚡ Maschile</button>
+          <button class="tab-btn" onclick="switchTab('femminile', this)" id="tab-femminile" role="tab">🌸 Femminile</button>
+        </div>
+
+        <!-- MASCHILE -->
+        <div class="tab-content active" id="maschile">
+          <p style="margin-bottom:1.25rem; color: var(--gray-600); font-size:0.9rem;">
+            Classifica aggiornata dopo 5 tappe · <strong>10 tappe totali</strong> tra Gennaio e Giugno 2026 · Categoria Intermedio &amp; Entry
+          </p>
+          <div style="overflow-x:auto;">
+            <table class="ranking-full-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Giocatore</th>
+                  <th>Punti</th>
+                  <th>31-gen</th>
+                  <th>21-feb</th>
+                  <th>14-mar</th>
+                  <th>28-mar</th>
+                  <th>11-apr</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td><span class="pos-medal pos-1">1</span></td><td>Lorenzo D.</td><td>47</td><td>10</td><td>—</td><td>11</td><td>13</td><td>13</td></tr>
+                <tr><td><span class="pos-medal pos-2">2</span></td><td>Stefano P.</td><td>41</td><td>4</td><td>6</td><td>13</td><td>8</td><td>10</td></tr>
+                <tr><td><span class="pos-medal pos-3">3</span></td><td>Andrea T.</td><td>40</td><td>10</td><td>10</td><td>9</td><td>8</td><td>3</td></tr>
+                <tr><td>4</td><td>Gianpiero P.</td><td>33</td><td>8</td><td>6</td><td>9</td><td>10</td><td>—</td></tr>
+                <tr><td>5</td><td>Walter ST</td><td>26</td><td>6</td><td>5</td><td>11</td><td>4</td><td>4</td></tr>
+                <tr><td>6</td><td>Andrea C.</td><td>24</td><td>8</td><td>—</td><td>—</td><td>10</td><td>6</td></tr>
+                <tr><td>7</td><td>Valentino P.</td><td>22</td><td>6</td><td>10</td><td>—</td><td>6</td><td>4</td></tr>
+                <tr><td>8</td><td>Niccolò V.</td><td>21</td><td>8</td><td>8</td><td>—</td><td>—</td><td>5</td></tr>
+                <tr><td>9</td><td>Luca G.</td><td>20</td><td>13</td><td>—</td><td>7</td><td>—</td><td>—</td></tr>
+                <tr><td>10</td><td>Gabriel M.</td><td>18</td><td>6</td><td>—</td><td>8</td><td>—</td><td>4</td></tr>
+                <tr><td>11</td><td>Fabrizio T.</td><td>17</td><td>5</td><td>6</td><td>—</td><td>6</td><td>4</td></tr>
+                <tr><td>11</td><td>Antonello P.</td><td>17</td><td>4</td><td>4</td><td>5</td><td>4</td><td>3</td></tr>
+                <tr><td>12</td><td>Claudio S.</td><td>15</td><td>—</td><td>—</td><td>7</td><td>—</td><td>8</td></tr>
+                <tr><td>13</td><td>Umberto M.</td><td>13</td><td>—</td><td>13</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>13</td><td>Aldo R.</td><td>13</td><td>—</td><td>—</td><td>13</td><td>—</td><td>—</td></tr>
+                <tr><td>13</td><td>Marco R.</td><td>13</td><td>13</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>14</td><td>Andrea D.</td><td>11</td><td>—</td><td>4</td><td>7</td><td>—</td><td>—</td></tr>
+                <tr><td>14</td><td>Alessandro C.</td><td>11</td><td>—</td><td>—</td><td>5</td><td>—</td><td>6</td></tr>
+                <tr><td>15</td><td>Giuliano M.</td><td>10</td><td>10</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>15</td><td>Alberto M.</td><td>10</td><td>10</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>15</td><td>Lorenzo M.</td><td>10</td><td>—</td><td>4</td><td>6</td><td>—</td><td>—</td></tr>
+                <tr><td>16</td><td>Giorgio D.</td><td>9</td><td>—</td><td>—</td><td>9</td><td>—</td><td>—</td></tr>
+                <tr><td>16</td><td>Pietro F.</td><td>9</td><td>—</td><td>—</td><td>9</td><td>—</td><td>—</td></tr>
+                <tr><td>17</td><td>Alessandro E.</td><td>8</td><td>—</td><td>—</td><td>—</td><td>—</td><td>8</td></tr>
+                <tr><td>17</td><td>Alessandro G.</td><td>8</td><td>—</td><td>—</td><td>—</td><td>—</td><td>8</td></tr>
+                <tr><td>17</td><td>Roberto M.</td><td>8</td><td>—</td><td>8</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>17</td><td>Alberto L.</td><td>8</td><td>8</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>17</td><td>Mattia M.</td><td>8</td><td>—</td><td>—</td><td>8</td><td>—</td><td>—</td></tr>
+                <tr><td>18</td><td>Giacomo S.</td><td>7</td><td>—</td><td>—</td><td>7</td><td>—</td><td>—</td></tr>
+                <tr><td>18</td><td>Carlo S.</td><td>7</td><td>—</td><td>—</td><td>7</td><td>—</td><td>—</td></tr>
+                <tr><td>18</td><td>Marco C.</td><td>7</td><td>—</td><td>—</td><td>7</td><td>—</td><td>—</td></tr>
+                <tr><td>19</td><td>Alessandro Z.</td><td>6</td><td>6</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>19</td><td>Edoardo G.</td><td>6</td><td>6</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>19</td><td>Marco M.</td><td>6</td><td>—</td><td>—</td><td>—</td><td>—</td><td>6</td></tr>
+                <tr><td>19</td><td>Luciano P.</td><td>6</td><td>—</td><td>—</td><td>6</td><td>—</td><td>—</td></tr>
+                <tr><td>19</td><td>Mauro M.</td><td>6</td><td>—</td><td>—</td><td>—</td><td>6</td><td>—</td></tr>
+                <tr><td>19</td><td>David B.</td><td>6</td><td>6</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>20</td><td>Guido S.</td><td>5</td><td>5</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>20</td><td>Dario P.</td><td>5</td><td>—</td><td>—</td><td>—</td><td>5</td><td>—</td></tr>
+                <tr><td>21</td><td>Emiliano G.</td><td>4</td><td>4</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>21</td><td>Lorenzo C.</td><td>4</td><td>4</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>21</td><td>Diego B.</td><td>4</td><td>4</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>21</td><td>Pietro L.</td><td>4</td><td>4</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>21</td><td>Giorgio R.</td><td>4</td><td>—</td><td>—</td><td>4</td><td>—</td><td>—</td></tr>
+                <tr><td>21</td><td>Francesco G.</td><td>4</td><td>—</td><td>—</td><td>4</td><td>—</td><td>—</td></tr>
+                <tr><td>21</td><td>Andrea A.</td><td>4</td><td>—</td><td>—</td><td>4</td><td>—</td><td>—</td></tr>
+                <tr><td>21</td><td>Stefano G.</td><td>4</td><td>—</td><td>—</td><td>—</td><td>4</td><td>—</td></tr>
+                <tr><td>21</td><td>Fabio C.</td><td>4</td><td>—</td><td>—</td><td>—</td><td>4</td><td>—</td></tr>
+                <tr><td>21</td><td>Antonio D.</td><td>4</td><td>—</td><td>—</td><td>—</td><td>4</td><td>—</td></tr>
+                <tr><td>22</td><td>Raimondo</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>3</td></tr>
+                <tr><td>22</td><td>Roberto A.</td><td>3</td><td>—</td><td>—</td><td>3</td><td>—</td><td>—</td></tr>
+                <tr><td>22</td><td>Luca L.</td><td>3</td><td>—</td><td>—</td><td>3</td><td>—</td><td>—</td></tr>
+                <tr><td>22</td><td>Gabriele D.</td><td>3</td><td>—</td><td>—</td><td>3</td><td>—</td><td>—</td></tr>
+                <tr><td>22</td><td>Simone F.</td><td>3</td><td>—</td><td>—</td><td>3</td><td>—</td><td>—</td></tr>
+                <tr><td>22</td><td>Antonio P.</td><td>3</td><td>—</td><td>—</td><td>—</td><td>3</td><td>—</td></tr>
+                <tr><td>22</td><td>Sergio DS.</td><td>3</td><td>—</td><td>—</td><td>—</td><td>3</td><td>—</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- FEMMINILE -->
+        <div class="tab-content" id="femminile">
+          <p style="margin-bottom:1.25rem; color: var(--gray-600); font-size:0.9rem;">
+            Classifica aggiornata · <strong>10 tappe totali</strong> tra Febbraio e Giugno 2026 · Categoria Intermedio &amp; Entry · Premio: racchetta TOP
+          </p>
+
+          <div style="overflow-x:auto; margin-bottom: 2rem;">
+            <table class="ranking-full-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Giocatrice</th>
+                  <th>7-feb</th>
+                  <th>28-feb</th>
+                  <th>7-mar</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td><span class="pos-medal pos-1">1</span></td><td>Cristina Iacono</td><td>✓</td><td>✓</td><td>✓</td></tr>
+                <tr><td><span class="pos-medal pos-2">2</span></td><td>Alessandra Diaspro</td><td>✓</td><td>✓</td><td>✓</td></tr>
+                <tr><td><span class="pos-medal pos-3">3</span></td><td>Anna Martinolli</td><td>—</td><td>✓</td><td>—</td></tr>
+                <tr><td>4</td><td>Silvia Maffioli</td><td>✓</td><td>✓</td><td>—</td></tr>
+                <tr><td>5</td><td>Alessia Ferrara</td><td>—</td><td>✓</td><td>—</td></tr>
+                <tr><td>6</td><td>Rossella Milandri</td><td>—</td><td>✓</td><td>—</td></tr>
+                <tr><td>7</td><td>Angela Scarafile</td><td>✓</td><td>✓</td><td>—</td></tr>
+                <tr><td>8</td><td>Anna Martinolli</td><td>—</td><td>✓</td><td>—</td></tr>
+                <tr><td>9</td><td>Radja</td><td>—</td><td>✓</td><td>—</td></tr>
+                <tr><td>10</td><td>Annachiara Zecchel</td><td>—</td><td>✓</td><td>—</td></tr>
+                <tr><td>11</td><td>Ilaria Stoppa</td><td>✓</td><td>—</td><td>✓</td></tr>
+                <tr><td>12</td><td>Marinella Lopergolo</td><td>—</td><td>✓</td><td>—</td></tr>
+                <tr><td>13</td><td>Francesca Caravaggi</td><td>—</td><td>—</td><td>✓</td></tr>
+                <tr><td>14</td><td>Winca Iadicchio</td><td>—</td><td>—</td><td>✓</td></tr>
+                <tr><td>15</td><td>Manuela Rubattu</td><td>✓</td><td>✓</td><td>—</td></tr>
+                <tr><td>16</td><td>Annalisa Navarra</td><td>—</td><td>✓</td><td>—</td></tr>
+                <tr><td>17</td><td>Federica Cugnasco</td><td>—</td><td>✓</td><td>—</td></tr>
+                <tr><td>18</td><td>Tina Giordano</td><td>—</td><td>✓</td><td>—</td></tr>
+                <tr><td>19</td><td>Claudia Chiesa</td><td>✓</td><td>✓</td><td>—</td></tr>
+                <tr><td>20</td><td>Daniela De Mattei</td><td>—</td><td>✓</td><td>—</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div style="background: #fff8dc; border: 1px solid #f5c518; border-radius: var(--radius); padding: 1rem 1.25rem; font-size: 0.9rem; color: #7a6000;">
+            <strong>🏆 Premio finale:</strong> Una racchetta di livello TOP in palio per la vincitrice del campionato femminile. La classifica con i punti cumulativi è in aggiornamento.
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">PADELAND MILANO</div>
+          <p>Il più grande centro Padel nella zona Sud-Est di Milano.</p>
+        </div>
+        <div>
+          <h4>Link rapidi</h4>
+          <ul>
+            <li><a href="tornei.html">Tornei &amp; Classifiche</a></li>
+            <li><a href="lezioni.html">Lezioni</a></li>
+            <li><a href="persone.html">Persone</a></li>
+            <li><a href="contatti.html">Contatti</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contatti</h4>
+          <p>Segreteria: <a href="tel:3515749296" style="color:rgba(255,255,255,0.9);">351 574 9296</a><br>Lezioni: <a href="tel:3470009037" style="color:rgba(255,255,255,0.9);">347 000 9037</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Padeland Milano · PAMM Sportiva SRL</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
