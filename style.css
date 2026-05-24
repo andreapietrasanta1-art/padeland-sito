@@ -545,7 +545,7 @@ section { padding: 4rem 0; }
 /* === PERSONE PAGE === */
 .people-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
 }
 .person-card {
@@ -691,6 +691,10 @@ section { padding: 4rem 0; }
   .tabs { overflow-x: auto; }
   .ranking-full-table th:nth-child(n+5),
   .ranking-full-table td:nth-child(n+5) { display: none; }
+}
+
+@media (max-width: 900px) {
+  .people-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 500px) {
