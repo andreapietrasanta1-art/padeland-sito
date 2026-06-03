@@ -83,3 +83,29 @@ window.addEventListener('DOMContentLoaded', () => {
   const btn = document.getElementById('tab-' + hash);
   if (target && btn) switchTab(hash, btn);
 });
+
+// Junior School popup
+(function () {
+  const STORAGE_KEY = 'junior-popup-closed-26-27';
+  if (sessionStorage.getItem(STORAGE_KEY)) return;
+
+  const popup = document.createElement('div');
+  popup.id = 'junior-popup';
+  popup.innerHTML = `
+    <button id="junior-popup-close" aria-label="Chiudi">✕</button>
+    <div id="junior-popup-inner">
+      <div style="font-size:2rem">🎾</div>
+      <div id="junior-popup-text">
+        <strong>Nuova offerta</strong>
+        <span>Junior School 26/27</span>
+      </div>
+    </div>
+    <a id="junior-popup-cta" href="lezioni.html#junior-school">Scopri i corsi →</a>
+  `;
+  document.body.appendChild(popup);
+
+  document.getElementById('junior-popup-close').addEventListener('click', () => {
+    popup.classList.add('hidden');
+    sessionStorage.setItem(STORAGE_KEY, '1');
+  });
+}());
