@@ -77,11 +77,16 @@ function switchTab(id, btn) {
 }
 
 // Auto-open tab from URL hash (#maschile / #femminile)
+// Also handles smooth scroll to any anchored section (e.g. #junior-school)
 window.addEventListener('DOMContentLoaded', () => {
   const hash = window.location.hash.replace('#', '');
   const target = document.getElementById(hash);
   const btn = document.getElementById('tab-' + hash);
-  if (target && btn) switchTab(hash, btn);
+  if (target && btn) {
+    switchTab(hash, btn);
+  } else if (target) {
+    setTimeout(() => target.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+  }
 });
 
 // Junior School popup
