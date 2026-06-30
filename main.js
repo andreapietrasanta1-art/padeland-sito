@@ -141,7 +141,7 @@ window.addEventListener('DOMContentLoaded', () => {
       <div class="playoff-date-divider"></div>
       <div class="playoff-date-item">
         <span class="playoff-date-label">Orario</span>
-        <span class="playoff-date-value">ore 14:00</span>
+        <span class="playoff-date-value">ore 15:00</span>
       </div>
       <div class="playoff-date-divider"></div>
       <div class="playoff-date-item">
