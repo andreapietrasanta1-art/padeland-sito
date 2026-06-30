@@ -162,7 +162,14 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   document.getElementById('playoff-modal-close').addEventListener('click', closePlayoffModal);
-  document.getElementById('playoff-modal-btn').addEventListener('click', closePlayoffModal);
+  document.getElementById('playoff-modal-btn').addEventListener('click', () => {
+    fetch('https://ntfy.sh/padeland-playoff-cisaro-2026', {
+      method: 'POST',
+      body: 'Qualcuno ha cliccato Ci sarò! 🏸 - ' + new Date().toLocaleString('it-IT'),
+      headers: { 'Title': 'Playoff Serie C - Adesione', 'Priority': 'default', 'Tags': 'badminton' }
+    }).catch(() => {});
+    closePlayoffModal();
+  });
   overlay.addEventListener('click', (e) => {
     if (e.target === overlay) closePlayoffModal();
   });
