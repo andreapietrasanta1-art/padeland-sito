@@ -114,3 +114,56 @@ window.addEventListener('DOMContentLoaded', () => {
     sessionStorage.setItem(STORAGE_KEY, '1');
   });
 }());
+
+// Playoff Serie C popup
+(function () {
+  const STORAGE_KEY = 'playoff-serie-c-2026-07-04';
+  const EVENT_DATE = new Date('2026-07-04T23:59:00');
+  if (sessionStorage.getItem(STORAGE_KEY)) return;
+  if (new Date() > EVENT_DATE) return;
+
+  const overlay = document.createElement('div');
+  overlay.id = 'playoff-overlay';
+
+  const modal = document.createElement('div');
+  modal.id = 'playoff-modal';
+  modal.innerHTML = `
+    <button id="playoff-modal-close" aria-label="Chiudi">✕</button>
+    <div id="playoff-modal-badge">EVENTO SPECIALE</div>
+    <div id="playoff-modal-icon">🏸</div>
+    <h2 id="playoff-modal-title">PLAYOFF SERIE C</h2>
+    <p id="playoff-modal-subtitle">La nostra squadra maschile di Serie D si gioca la promozione!</p>
+    <div id="playoff-modal-date">
+      <div class="playoff-date-item">
+        <span class="playoff-date-label">Data</span>
+        <span class="playoff-date-value">Sabato 4 Luglio</span>
+      </div>
+      <div class="playoff-date-divider"></div>
+      <div class="playoff-date-item">
+        <span class="playoff-date-label">Orario</span>
+        <span class="playoff-date-value">ore 14:00</span>
+      </div>
+      <div class="playoff-date-divider"></div>
+      <div class="playoff-date-item">
+        <span class="playoff-date-label">Dove</span>
+        <span class="playoff-date-value">Padeland Milano</span>
+      </div>
+    </div>
+    <p id="playoff-modal-cta-text">Vieni a tifare con noi! Il tuo supporto fa la differenza 💪</p>
+    <button id="playoff-modal-btn">Ci sarò! 🎉</button>
+  `;
+
+  overlay.appendChild(modal);
+  document.body.appendChild(overlay);
+
+  function closePlayoffModal() {
+    overlay.classList.add('hidden');
+    sessionStorage.setItem(STORAGE_KEY, '1');
+  }
+
+  document.getElementById('playoff-modal-close').addEventListener('click', closePlayoffModal);
+  document.getElementById('playoff-modal-btn').addEventListener('click', closePlayoffModal);
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) closePlayoffModal();
+  });
+}());
