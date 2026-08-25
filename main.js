@@ -132,7 +132,7 @@ window.addEventListener('DOMContentLoaded', () => {
       </div>
     </div>
     <div class="openday-footer">
-      <a id="openday-cta" href="https://www.padelandmilano.com/openday">Iscriviti ora &rarr;</a>
+      <a id="openday-cta" href="https://forms.gle/3NqneMxxPx96b1bF8" target="_blank">Iscriviti ora &rarr;</a>
       <p class="openday-contact">Antonio Alleva 347 000 9037 · amministrazione@padeland.it</p>
     </div>
   `;
