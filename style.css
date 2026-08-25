@@ -545,8 +545,12 @@ section { padding: 4rem 0; }
 /* === PERSONE PAGE === */
 .people-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  justify-items: center;
+}
+.people-grid .person-card {
+  width: 100%;
 }
 .person-card {
   background: var(--white);
