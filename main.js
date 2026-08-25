@@ -89,28 +89,63 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// Junior School popup
+// Open Day popup
 (function () {
-  const STORAGE_KEY = 'junior-popup-closed-26-27';
+  const STORAGE_KEY = 'openday-popup-closed-5set2026';
   if (sessionStorage.getItem(STORAGE_KEY)) return;
 
+  const overlay = document.createElement('div');
+  overlay.id = 'openday-overlay';
+
   const popup = document.createElement('div');
-  popup.id = 'junior-popup';
+  popup.id = 'openday-popup';
   popup.innerHTML = `
-    <button id="junior-popup-close" aria-label="Chiudi">✕</button>
-    <div id="junior-popup-inner">
-      <div style="font-size:2rem">🎾</div>
-      <div id="junior-popup-text">
-        <strong>Nuova offerta</strong>
-        <span>Junior School 26/27</span>
+    <button id="openday-popup-close" aria-label="Chiudi">&times;</button>
+    <div class="openday-header">
+      <span class="openday-date">SABATO 5 SETTEMBRE 2026</span>
+      <h2>OPEN DAY PADELAND</h2>
+      <p class="openday-subtitle">Via V. Toffetti, 17 — Milano · ore 9:00–18:00</p>
+    </div>
+    <div class="openday-body">
+      <div class="openday-cards">
+        <div class="openday-card">
+          <div class="openday-card-label">INGRESSO</div>
+          <div class="openday-card-price">20 &euro;</div>
+          <p>Comprensivo di consumazione (birra o bibita + panino) e iscrizione a un torneo</p>
+        </div>
+        <div class="openday-card">
+          <div class="openday-card-label">LEZIONI DI PROVA</div>
+          <div class="openday-card-price">Gratis</div>
+          <p>Prove di 20 min con istruttori federali, dalle 9:00 alle 12:00, previa iscrizione</p>
+        </div>
+      </div>
+      <div class="openday-schedule">
+        <strong>Programma della giornata:</strong>
+        <ul>
+          <li>09–12: Lezioni di prova e livellamenti</li>
+          <li>10–12: Torneo Under 18 + Torneo rodeo femminile Entry</li>
+          <li>12–14: Torneo rodeo femminile Intermedio</li>
+          <li>12–15: Test racchette e materiale sponsor</li>
+          <li>14–16: Torneo rodeo maschile + Esibizione squadre</li>
+          <li>16–17: Premiazione Macron League</li>
+        </ul>
       </div>
     </div>
-    <a id="junior-popup-cta" href="lezioni.html#junior-school">Scopri i corsi →</a>
+    <div class="openday-footer">
+      <a id="openday-cta" href="https://www.padelandmilano.com/openday">Iscriviti ora &rarr;</a>
+      <p class="openday-contact">Antonio Alleva 347 000 9037 · amministrazione@padeland.it</p>
+    </div>
   `;
+
+  document.body.appendChild(overlay);
   document.body.appendChild(popup);
 
-  document.getElementById('junior-popup-close').addEventListener('click', () => {
+  function closePopup() {
     popup.classList.add('hidden');
+    overlay.classList.add('hidden');
     sessionStorage.setItem(STORAGE_KEY, '1');
-  });
+  }
+
+  document.getElementById('openday-popup-close').addEventListener('click', closePopup);
+  overlay.addEventListener('click', closePopup);
 }());

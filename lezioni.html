@@ -44,10 +44,10 @@
           <div class="price-card featured">
             <div class="price-header">
               <h3>Pacchetto Serale</h3>
-              <div class="price-duration">12 lezioni · 90 minuti · sera</div>
+              <div class="price-duration">12 lezioni · 1h30 · sera · Stagione 2026/2027</div>
             </div>
             <div class="price-body">
-              <div class="price-note">Feriali 18:00–23:00 o sabato mattina · max 4 giocatori per campo</div>
+              <div class="price-note">Feriali 18:00–23:00 o sabato mattina · max 4 giocatori per campo · 4 livelli disponibili</div>
               <table class="lezioni-price-table">
                 <thead>
                   <tr><th>N. giocatori</th><th>Prezzo/persona</th></tr>
@@ -58,11 +58,11 @@
                 </tbody>
               </table>
               <ul class="price-features">
-                <li>12 lezioni da 90 minuti</li>
-                <li>Istruttore FITP certificato</li>
-                <li>Tesseramento FITP incluso</li>
-                <li>20% sconto collezione Macron</li>
-                <li>10% sconto tornei Macron Cup</li>
+                <li>12 lezioni da 1h30 con istruttore FITP</li>
+                <li>Tesseramento FITP non agonistico 2026 incluso</li>
+                <li>20% sconto su tutta la collezione Macron</li>
+                <li>10% sconto sui tornei Macron Cup</li>
+                <li>10% sconto sulle lezioni diurne infrasettimanali</li>
               </ul>
               <div class="price-contact">
                 Contatta <strong>Antonio Alleva</strong> · <a href="tel:3470009037">347 000 9037</a>
@@ -74,7 +74,7 @@
           <div class="price-card">
             <div class="price-header">
               <h3>Pacchetto Flessibile</h3>
-              <div class="price-duration">12 lezioni · 60 minuti · qualsiasi orario</div>
+              <div class="price-duration">12 lezioni · 1h · qualsiasi orario · Stagione 2026/2027</div>
             </div>
             <div class="price-body">
               <div class="price-note">4 livelli disponibili · prezzo per pacchetto di 12 lezioni</div>
@@ -135,10 +135,10 @@
                 </div>
               </div>
               <ul class="price-features">
-                <li>12 lezioni da 60 minuti</li>
-                <li>Istruttore FITP certificato</li>
-                <li>Orario libero su prenotazione</li>
-                <li>Adatto a tutti i livelli</li>
+                <li>12 lezioni da 1h con istruttore FITP</li>
+                <li>Tesseramento FITP non agonistico 2026 incluso</li>
+                <li>20% sconto sulla collezione Macron</li>
+                <li>10% sconto su tornei Macron Cup e lezioni diurne</li>
               </ul>
               <div class="price-contact">
                 Contatta <strong>Antonio Alleva</strong> · <a href="tel:3470009037">347 000 9037</a>
@@ -150,25 +150,75 @@
           <div class="price-card">
             <div class="price-header alt">
               <h3>Lezioni Singole</h3>
-              <div class="price-duration">60 minuti · senza pacchetto</div>
+              <div class="price-duration">1h · senza pacchetto · Stagione 2026/2027</div>
             </div>
             <div class="price-body">
-              <div class="price-note">Prezzo per singola lezione · disponibile su prenotazione</div>
-              <table class="lezioni-price-table">
+              <div class="price-note">Prezzo a persona per singola lezione · disdetta entro 48h</div>
+              <!-- desktop: tabella unica -->
+              <table class="lezioni-price-table flessibile-desktop">
                 <thead>
-                  <tr><th>N. allievi</th><th>Lun–Ven 18–22 / weekend</th><th>Lun–Ven fuori 18–22</th></tr>
+                  <tr>
+                    <th>N. allievi</th>
+                    <th>Feriale pre-18</th>
+                    <th class="th-weekend">Week-<br>end</th>
+                    <th>Feriale post-18</th>
+                  </tr>
                 </thead>
                 <tbody>
-                  <tr><td>1 persona</td><td>€ 60</td><td>€ 55</td></tr>
-                  <tr><td>2 persone</td><td>€ 35</td><td>€ 30</td></tr>
-                  <tr><td>3 persone</td><td>€ 25</td><td>€ 23</td></tr>
-                  <tr><td>4 persone</td><td>€ 20</td><td>€ 20</td></tr>
+                  <tr><td>Solo campo</td><td>€ 8</td><td>€ 10</td><td>€ 10</td></tr>
+                  <tr><td>1 persona</td><td>€ 55</td><td>€ 60</td><td>€ 70</td></tr>
+                  <tr><td>2 persone</td><td>€ 30</td><td>€ 35</td><td>€ 35</td></tr>
+                  <tr><td>3 persone</td><td>€ 23</td><td>€ 25</td><td>€ 25</td></tr>
+                  <tr><td>4 persone</td><td>€ 19</td><td>€ 20</td><td>€ 20</td></tr>
                 </tbody>
               </table>
+              <!-- mobile: blocchi impilati -->
+              <div class="flessibile-grid flessibile-mobile">
+                <div class="flessibile-block">
+                  <div class="flessibile-label">Feriale pre-18</div>
+                  <table class="lezioni-price-table">
+                    <thead><tr><th>Allievi</th><th>Prezzo</th></tr></thead>
+                    <tbody>
+                      <tr><td>Campo</td><td>€ 8</td></tr>
+                      <tr><td>1</td><td>€ 55</td></tr>
+                      <tr><td>2</td><td>€ 30</td></tr>
+                      <tr><td>3</td><td>€ 23</td></tr>
+                      <tr><td>4</td><td>€ 19</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="flessibile-block">
+                  <div class="flessibile-label">Weekend</div>
+                  <table class="lezioni-price-table">
+                    <thead><tr><th>Allievi</th><th>Prezzo</th></tr></thead>
+                    <tbody>
+                      <tr><td>Campo</td><td>€ 10</td></tr>
+                      <tr><td>1</td><td>€ 60</td></tr>
+                      <tr><td>2</td><td>€ 35</td></tr>
+                      <tr><td>3</td><td>€ 25</td></tr>
+                      <tr><td>4</td><td>€ 20</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="flessibile-block">
+                  <div class="flessibile-label">Feriale post-18</div>
+                  <table class="lezioni-price-table">
+                    <thead><tr><th>Allievi</th><th>Prezzo</th></tr></thead>
+                    <tbody>
+                      <tr><td>Campo</td><td>€ 10</td></tr>
+                      <tr><td>1</td><td>€ 70</td></tr>
+                      <tr><td>2</td><td>€ 35</td></tr>
+                      <tr><td>3</td><td>€ 25</td></tr>
+                      <tr><td>4</td><td>€ 20</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
               <ul class="price-features">
-                <li>Lezione singola da 60 minuti</li>
+                <li>Lezione singola da 1h</li>
                 <li>Nessun abbonamento richiesto</li>
                 <li>Istruttore FITP certificato</li>
+                <li>Disdetta entro 48h prima della lezione</li>
               </ul>
               <div class="price-contact">
                 Contatta <strong>Antonio Alleva</strong> · <a href="tel:3470009037">347 000 9037</a>
@@ -210,8 +260,9 @@
         <div class="includes-box">
           <h3>✅ Incluso in tutti i pacchetti</h3>
           <ul class="includes-list">
-            <li>Tesseramento FITP</li>
-            <li>Valutazione gratuita con fisioterapista</li>
+            <li>Tesseramento FITP non agonistico</li>
+            <li>Certificato medico obbligatorio</li>
+            <li>Orario da concordare con l'istruttore</li>
           </ul>
         </div>
       </div>
@@ -229,27 +280,27 @@
           <!-- PACCHETTO CORSI -->
           <div class="price-card featured" style="max-width:100%;">
             <div class="price-header" style="background: linear-gradient(135deg, #c0392b, #e74c3c);">
-              <h3>Corsi Under 18 — Stagione 26/27</h3>
-              <div class="price-duration">28 Settembre 2026 · 4 Giugno 2027 · Lun–Ven · pomeridiani</div>
+              <h3>Corsi Under 18 — Stagione 2026/2027</h3>
+              <div class="price-duration">1 o 2 volte a settimana · pomeriggi Lun–Gio · 14:30–18:00</div>
             </div>
             <div class="price-body">
-              <div class="price-note">Corsi pomeridiani dal lunedì al venerdì dalle 14:30 alle 18:00 · 1 o 2 volte a settimana · gruppi per età, classe e livello</div>
+              <div class="price-note">Gruppi in base a età, classe e livello</div>
               <table class="lezioni-price-table">
                 <thead>
                   <tr><th>N. allievi</th><th>Mono-settimanale</th><th>Bi-settimanale</th></tr>
                 </thead>
                 <tbody>
                   <tr><td>3 allievi</td><td>€ 500</td><td>€ 900</td></tr>
-                  <tr><td>4+ allievi</td><td>€ 450</td><td>€ 800</td></tr>
+                  <tr><td>4 o più</td><td>€ 450</td><td>€ 800</td></tr>
                 </tbody>
               </table>
               <p style="font-size:0.8rem; color:var(--gray-500); text-align:right; margin-top:0.25rem;">
-                * Genitore iscritto a un corso Padeland Milano: ulteriore 10% di sconto
+                * Sconto famiglia: se un genitore partecipa a un corso Padeland Milano, ulteriore 10% di sconto
               </p>
               <ul class="price-features">
-                <li>30 lezioni da 1h con istruttore FITP (ottobre 2026 – maggio 2027)</li>
+                <li>30 lezioni da 1h con istruttore FITP (da ottobre 2026 a maggio 2027)</li>
                 <li>Tesseramento FITP Under 18 non agonistico incluso</li>
-                <li>20% di sconto su tutta la collezione Macron acquistabile presso il centro</li>
+                <li>20% di sconto su tutta la collezione Macron</li>
                 <li>Certificato medico non agonistico obbligatorio</li>
               </ul>
               <div style="margin-top:1.25rem; padding:1rem; background: rgba(192,57,43,0.08); border-left: 3px solid #e74c3c; border-radius:6px;">
@@ -272,106 +323,62 @@
     <!-- AGONISTICA -->
     <section>
       <div class="container">
-        <h2 class="section-title">Programma Agonistica 2026</h2>
+        <h2 class="section-title">Programma Agonistica — Settembre–Dicembre 2026</h2>
         <p style="text-align:center; color:var(--gray-600); margin-bottom:2rem; font-size:0.95rem;">
-          Allenamenti strutturati su due campi con due istruttori federali · gruppi da 4 per livelli omogenei · preparazione tornei federali
+          Due istruttori federali, gruppi da 4 giocatori divisi per livello omogeneo
         </p>
 
         <div class="price-grid">
 
-          <!-- MASCHILE INVERNALE -->
-          <div class="price-card">
+          <!-- AGONISTICA GRUPPI ESISTENTI -->
+          <div class="price-card featured">
             <div class="price-header" style="background: linear-gradient(135deg, var(--purple-dark), var(--purple));">
-              <h3>Agonistica Maschile — Sessione Invernale</h3>
-              <div class="price-duration">Gennaio – Aprile 2026</div>
+              <h3>Sessione Invernale — Miglioramento</h3>
+              <div class="price-duration">Settembre – Dicembre 2026</div>
             </div>
             <div class="price-body">
               <div class="price-amount">€ 330 <span>a persona</span></div>
               <ul class="price-features">
-                <li>8 lezioni da 1h30 (1×/settimana) su 2 campi</li>
-                <li>2 istruttori federali · gruppi da 4</li>
-                <li>3 partite guidate da 1h30 (sera 21:30–23:00)</li>
-                <li>30 min di campo libero dopo le lezioni (23:00–23:30)</li>
+                <li>8 lezioni da 1h30 (1×/settimana) su 2 campi con 2 istruttori federali</li>
+                <li>3 partite guidate da 1h30 in settimana, sera (slot 20:00–21:30 e 21:30–23:00)</li>
                 <li>Iscrizione FITP non agonistica 2026</li>
-                <li>Iscrizione Squadra Coppa Italia TPRA 2026</li>
+                <li>Iscrizione Squadra Coppa Winter Cup TPRA 2026</li>
                 <li>10% sconto tornei Macron Cup</li>
                 <li>25% sconto collezione Macron</li>
+                <li>10% sconto sulle lezioni diurne infrasettimanali</li>
                 <li>Certificato medico non agonistico obbligatorio</li>
               </ul>
               <div class="price-contact">
-                Contatta <strong>Antonio Alleva</strong> · <a href="tel:3470009037">347 000 9037</a>
+                Contatta <strong>Diego Pileri</strong> · <a href="tel:3332404112">333 240 4112</a> · <strong>Antonio Alleva</strong> · <a href="tel:3470009037">347 000 9037</a>
               </div>
             </div>
           </div>
 
-          <!-- MASCHILE STAGIONE COMPLETA -->
-          <div class="price-card featured">
-            <div class="price-header" style="background: linear-gradient(135deg, var(--purple-dark), var(--purple));">
-              <h3>Agonistica Maschile — Stagione Completa</h3>
-              <div class="price-duration">Gennaio – Giugno 2026</div>
-            </div>
-            <div class="price-body">
-              <div class="price-amount">€ 625 <span>a persona · 2 tranches</span></div>
-              <ul class="price-features">
-                <li>16 lezioni da 1h30 (1×/settimana) su 2 campi</li>
-                <li>2 istruttori federali · gruppi da 4</li>
-                <li>6 partite guidate da 1h30 (sera 21:30–23:00)</li>
-                <li>30 min di campo libero dopo le lezioni</li>
-                <li>Iscrizione FITP non agonistica 2026</li>
-                <li>Iscrizione Squadra Coppa Italia TPRA 2026</li>
-                <li>10% sconto tornei Macron Cup</li>
-                <li>25% sconto collezione Macron</li>
-                <li>15% sconto prenotazioni Giugno–Agosto</li>
-                <li>Certificato medico non agonistico obbligatorio</li>
-              </ul>
-              <div class="price-contact">
-                Contatta <strong>Antonio Alleva</strong> · <a href="tel:3470009037">347 000 9037</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- FEMMINILE INVERNALE -->
-          <div class="price-card">
-            <div class="price-header" style="background: linear-gradient(135deg, #8e24aa, #c2185b);">
-              <h3>Agonistica Femminile — Sessione Invernale</h3>
-              <div class="price-duration">Gennaio – Aprile 2026</div>
-            </div>
-            <div class="price-body">
-              <div class="price-amount">€ 320 <span>a persona</span></div>
-              <ul class="price-features">
-                <li>8 lezioni da 1h30 (1×/settimana) su 2 campi</li>
-                <li>2 istruttori federali · gruppi da 4</li>
-                <li>3 partite guidate da 1h30 (sera 21:30–23:00)</li>
-                <li>30 min di campo libero dopo le lezioni</li>
-                <li>Iscrizione FITP non agonistica 2026</li>
-                <li>Iscrizione Squadra Coppa Italia TPRA 2026</li>
-                <li>10% sconto tornei Macron Cup</li>
-                <li>25% sconto collezione Macron</li>
-                <li>Certificato medico non agonistico obbligatorio</li>
-              </ul>
-              <div class="price-contact">
-                Contatta <strong>Antonio Alleva</strong> · <a href="tel:3470009037">347 000 9037</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- FEMMINILE STAGIONE COMPLETA -->
+          <!-- AGONISTICA NUOVI GRUPPI -->
           <div class="price-card featured">
             <div class="price-header" style="background: linear-gradient(135deg, #8e24aa, #c2185b);">
-              <h3>Agonistica Femminile — Stagione Completa</h3>
-              <div class="price-duration">Gennaio – Giugno 2026</div>
+              <h3>Sessione Invernale — Nuovi Gruppi</h3>
+              <div class="price-duration">Settembre – Dicembre 2026</div>
             </div>
             <div class="price-body">
-              <div class="price-amount">€ 600 <span>a persona · 2 tranches</span></div>
+              <table class="lezioni-price-table">
+                <thead>
+                  <tr><th>Formula</th><th>Prezzo/persona</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Pacchetto Completo</td><td><strong>€ 395</strong></td></tr>
+                  <tr><td>Solo Lezioni e Partite</td><td><strong>€ 360</strong></td></tr>
+                </tbody>
+              </table>
               <ul class="price-features">
-                <li>16 lezioni da 1h30 (1×/settimana) su 2 campi</li>
-                <li>2 istruttori federali · gruppi da 4</li>
-                <li>6 partite guidate da 1h30 (sera 21:30–23:00)</li>
+                <li>9 lezioni da 1h30 (1×/settimana) su 2 campi con 2 istruttori federali</li>
+                <li>3 partite guidate da 1h30 in settimana, sera (21:30–23:00)</li>
+                <li>Iscrizione Squadra Coppa Winter Cup TPRA 2026</li>
                 <li>Iscrizione FITP non agonistica 2026</li>
-                <li>Iscrizione Squadra Coppa Italia TPRA 2026</li>
-                <li>10% sconto tornei Macron Cup</li>
-                <li>25% sconto collezione Macron</li>
-                <li>15% sconto prenotazioni Giugno–Agosto</li>
+                <li>Kit Macron Padeland Milano (maglietta) incluso</li>
+                <li>10% sconto sui tornei Macron Cup (da 3 a 5 tornei)</li>
+                <li>25% sconto sulla collezione Macron</li>
+                <li>10% sulle lezioni diurne</li>
                 <li>Certificato medico non agonistico obbligatorio</li>
               </ul>
               <div class="price-contact">
