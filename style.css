@@ -423,8 +423,11 @@ section { padding: 4rem 0; }
 /* === LEZIONI PAGE === */
 .price-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
+}
+@media (max-width: 700px) {
+  .price-grid { grid-template-columns: 1fr; }
 }
 .price-card {
   background: var(--white);
@@ -510,18 +513,17 @@ section { padding: 4rem 0; }
 }
 
 .th-weekend { width: 4rem; text-align: center; }
-.flessibile-desktop { display: table; }
-.flessibile-mobile { display: none; }
-
-@media (max-width: 480px) {
-  .flessibile-desktop { display: none; }
-  .flessibile-mobile { display: grid; }
-}
+.flessibile-desktop { display: none; }
+.flessibile-mobile { display: grid; }
 
 .flessibile-grid {
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 0.75rem;
   margin: 1rem 0;
+}
+
+@media (max-width: 540px) {
+  .flessibile-grid { grid-template-columns: 1fr; }
 }
 .flessibile-block {
   background: var(--white);
