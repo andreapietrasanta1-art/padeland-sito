@@ -101,7 +101,7 @@ window.addEventListener('DOMContentLoaded', () => {
   popup.id = 'promo-popup';
   popup.innerHTML = `
     <button id="promo-popup-close" aria-label="Chiudi">&times;</button>
-    <img src="img/locandina1.png" alt="Ladies Smash — Campionato femminile a tappe" class="promo-img">
+    <img src="img/locandina1.webp" alt="Ladies Smash — Campionato femminile a tappe" class="promo-img">
     <div class="promo-content">
       <h2>Iscriviti al Ladies Smash!</h2>
       <p>Il campionato a tappe tutto al femminile sta per partire. Iscriviti contattando la segreteria o tramite Playtomic.</p>
