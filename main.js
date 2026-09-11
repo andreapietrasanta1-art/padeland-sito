@@ -89,3 +89,39 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+// Ladies Smash popup
+(function () {
+  const STORAGE_KEY = 'ladies-smash-popup-closed';
+  if (sessionStorage.getItem(STORAGE_KEY)) return;
+
+  const overlay = document.createElement('div');
+  overlay.id = 'promo-overlay';
+
+  const popup = document.createElement('div');
+  popup.id = 'promo-popup';
+  popup.innerHTML = `
+    <button id="promo-popup-close" aria-label="Chiudi">&times;</button>
+    <img src="img/locandina1.png" alt="Ladies Smash — Campionato femminile a tappe" class="promo-img">
+    <div class="promo-content">
+      <h2>Iscriviti al Ladies Smash!</h2>
+      <p>Il campionato a tappe tutto al femminile sta per partire. Iscriviti contattando la segreteria o tramite Playtomic.</p>
+      <div class="promo-actions">
+        <a href="tel:3515749296" class="promo-btn promo-btn-phone">Chiama 351 574 9296</a>
+        <a href="https://playtomic.io" target="_blank" class="promo-btn promo-btn-playtomic">Prenota su Playtomic</a>
+      </div>
+    </div>
+  `;
+
+  document.body.appendChild(overlay);
+  document.body.appendChild(popup);
+
+  function closePopup() {
+    popup.classList.add('hidden');
+    overlay.classList.add('hidden');
+    sessionStorage.setItem(STORAGE_KEY, '1');
+  }
+
+  document.getElementById('promo-popup-close').addEventListener('click', closePopup);
+  overlay.addEventListener('click', closePopup);
+}());
+
