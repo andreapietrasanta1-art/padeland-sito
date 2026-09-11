@@ -107,7 +107,8 @@ window.addEventListener('DOMContentLoaded', () => {
       <p>Il campionato a tappe tutto al femminile sta per partire. Iscriviti contattando la segreteria o tramite Playtomic.</p>
       <div class="promo-actions">
         <a href="tel:3515749296" class="promo-btn promo-btn-phone">Chiama 351 574 9296</a>
-        <a href="https://playtomic.io" target="_blank" class="promo-btn promo-btn-playtomic">Prenota su Playtomic</a>
+        <a href="https://app.playtomic.io/tournaments/63cd725c-cb9c-4487-b619-bd3ff10f554f?utm_source=manager" target="_blank" class="promo-btn promo-btn-playtomic">Prenota su Playtomic livello 0,5-1,5</a>
+        <a href="https://app.playtomic.io/tournaments/cc22e387-96e9-4007-9424-e0ef331eae51?utm_source=manager" target="_blank" class="promo-btn promo-btn-playtomic">Prenota su Playtomic livello 1,5-3</a>
       </div>
     </div>
   `;
