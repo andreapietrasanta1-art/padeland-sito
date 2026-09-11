@@ -252,11 +252,37 @@ section { padding: 4rem 0; }
 .tournaments-preview { background: var(--white); }
 
 .locandine-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  justify-content: center;
   margin: 2rem 0;
+}
+.locandina-card {
+  background: var(--gray-100);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.locandina-card img {
+  width: 100%;
+  display: block;
+}
+.locandina-card h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin: 1rem 1.25rem 0.4rem;
+  color: var(--gray-800);
+}
+.locandina-card p {
+  font-size: 0.9rem;
+  color: var(--gray-600);
+  line-height: 1.5;
+  margin: 0 1.25rem 1.25rem;
+}
+@media (max-width: 680px) {
+  .locandine-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .rankings-preview {
