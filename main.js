@@ -89,9 +89,9 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// Ladies Smash popup
+// Festa Coppa Italia Gold popup
 (function () {
-  const STORAGE_KEY = 'ladies-smash-popup-closed';
+  const STORAGE_KEY = 'coppa-italia-popup-closed';
   if (sessionStorage.getItem(STORAGE_KEY)) return;
 
   const overlay = document.createElement('div');
@@ -101,14 +101,12 @@ window.addEventListener('DOMContentLoaded', () => {
   popup.id = 'promo-popup';
   popup.innerHTML = `
     <button id="promo-popup-close" aria-label="Chiudi">&times;</button>
-    <img src="img/locandina1.webp" alt="Ladies Smash — Campionato femminile a tappe" class="promo-img">
+    <img src="img/locandina_coppa_italia.jpg" alt="Torneo femminile — Festa Coppa Italia Gold 2026" class="promo-img">
     <div class="promo-content">
-      <h2>Iscriviti al Ladies Smash!</h2>
-      <p>Il campionato a tappe tutto al femminile sta per partire. Iscriviti contattando la segreteria o tramite Playtomic.</p>
+      <h2>Torneo Femminile — Festa Coppa Italia Gold 2026</h2>
+      <p>Padeland Milano organizza un torneo femminile in occasione della festa per celebrare la vittoria della coppa Italia Gold 2026 nazionale della nostra fantastica squadra femminile. Unisciti e sfida le nostre ragazze!</p>
       <div class="promo-actions">
-        <a href="tel:3515749296" class="promo-btn promo-btn-phone">Chiama 351 574 9296</a>
-        <a href="https://app.playtomic.io/tournaments/63cd725c-cb9c-4487-b619-bd3ff10f554f?utm_source=manager" target="_blank" class="promo-btn promo-btn-playtomic">Prenota su Playtomic livello 0,5-1,5</a>
-        <a href="https://app.playtomic.io/tournaments/cc22e387-96e9-4007-9424-e0ef331eae51?utm_source=manager" target="_blank" class="promo-btn promo-btn-playtomic">Prenota su Playtomic livello 1,5-3</a>
+        <a href="https://app.playtomic.io/tournaments/bddabb5e-6f9a-4d45-ae4a-00dfeaeb7071?utm_source=manager" target="_blank" class="promo-btn promo-btn-playtomic">Iscriviti su Playtomic</a>
       </div>
     </div>
   `;
