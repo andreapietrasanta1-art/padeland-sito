@@ -107,7 +107,7 @@ window.addEventListener('DOMContentLoaded', () => {
       <p>Il campionato a tappe tutto al femminile. Premi Macron ad ogni tappa, aperitivo offerto e super premi finali. Prima tappa il 26 settembre.</p>
       <div class="promo-actions">
         <a href="tel:3515749296" class="promo-btn promo-btn-phone">Chiama 351 574 9296</a>
-        <a href="https://app.playtomic.io/tournaments/02f1b9fd-2770-4b7a-86b0-9be689d4e22a?utm_source=manager" target="_blank" class="promo-btn promo-btn-playtomic">Prenota su Playtomic livello 1,5-3</a>
+        <a href="https://app.playtomic.com/tournaments/b146290d-3f80-4524-9b76-7422bfa9be40?utm_source=manager" target="_blank" class="promo-btn promo-btn-playtomic">Prenota su Playtomic livello 1,5-3</a>
       </div>
     </div>
   `;
